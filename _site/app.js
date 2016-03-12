@@ -15,7 +15,7 @@ function render(year, coords, layer, style, spinner){
                 dataType: "json",
                 url: "http://waterapp.enviro-service.appspot.com/crops?xmin="+xmin+"&xmax="+xmax+"&ymin="+ymin+"&ymax="+ymax+"&year="+year,
                     success: function(data) {
-                        document.getElementById('texter').innerHTML = '<i>What covers this land?</i>    ' 
+                        document.getElementById('texter').innerHTML = '<i>What covers this land?</i> &nbsp &nbsp' 
 
                         var sorted = data.results.sort(function(x, y) {
                             return parseFloat(y.area) - parseFloat(x.area)
@@ -23,7 +23,7 @@ function render(year, coords, layer, style, spinner){
 
                         res = 'In '+year+', <b>'+sorted[0]['landType']+'</b> ('+sorted[0]['area']+' acres) and <b>'+sorted[1]['landType']+'</b> ('+sorted[1]['area']+' acres).'
 
-                        document.getElementById('texter').innerHTML = '<i>What covers this land?</i>    ' + res
+                        document.getElementById('texter').innerHTML = '<i>What covers this land?</i> &nbsp &nbsp' + res
                         spinner.stop(target);
                     }
             }).error(function() {spinner.stop(target);});
@@ -172,7 +172,7 @@ function main() {
                 url: "http://waterapp.enviro-service.appspot.com/crops?xmin="+xmin+"&xmax="+xmax+"&ymin="+ymin+"&ymax="+ymax+"&year="+year,
                     success: function(data) {
 
-                        document.getElementById('texter').innerHTML = '<i>What covers this land?</i> ' 
+                        document.getElementById('texter').innerHTML = '<i>What covers this land?</i> &nbsp &nbsp' 
 
                         var sorted = data.results.sort(function(x, y) {
                             return parseFloat(y.area) - parseFloat(x.area)
@@ -180,7 +180,7 @@ function main() {
 
                         res = 'In '+year+', <b>'+sorted[0]['landType']+'</b> ('+sorted[0]['area']+' acres) and <b>'+sorted[1]['landType']+'</b> ('+sorted[1]['area']+' acres).'
 
-                        document.getElementById('texter').innerHTML = '<i>What covers this land?</i>    ' + res
+                        document.getElementById('texter').innerHTML = '<i>What covers this land?</i> &nbsp &nbsp' + res
                         spinner.stop(target);
                     }
             }).error(function(errors) {spinner.stop(target);console.log (errors.statustext)});
