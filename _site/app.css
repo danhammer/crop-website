@@ -10,7 +10,7 @@ html, body, #map {
     margin: 0;
 }
 #slider{
-    width: 600px;
+    width: 700px;
     margin-top:2px;
 }
 
@@ -34,8 +34,8 @@ html, body, #map {
 #controls {
     position: absolute;
     bottom: 10px;
-    width: 700px;
-    left: calc((100% - 700px) / 2);
+    width: 800px;
+    left: calc((100% - 800px) / 2);
     z-index: 2;
     background-color: #fff;
     padding: 10px;
@@ -57,6 +57,13 @@ html, body, #map {
 
 #yearcontrol{
     width: 100%;
+}
+
+#texter{
+    width: 100%;
+    font-family: Helvetica, Arial, sans-serif; 
+    font-size: 14px; 
+    line-height:20px; width: 600px; margin-top: -5px; color: #74776B; 
 }
 
 #slider {

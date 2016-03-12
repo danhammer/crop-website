@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>crops</title>
+    <title>Crop labels</title>
     <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
     <meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
     <link rel="shortcut icon" href="http://cartodb.com/assets/favicon.ico" />
@@ -10,18 +10,29 @@
     <link rel="stylesheet" href="app.css" />
   </head>
   <body>
-    <div class="header">
-    </div>
 
     <div id="map">
         <div id="controls" class="leaflet-bar">
-          <div id="container"> 
-            <div id="series"></div>
+          <div id="texter"> 
+            <i>What covers this land?</i>
           </div>
 
-          <div id='taggers'>
+          <br><hr><br>
+          
+          <div id="yearcontrol">
+             <label for=slider>Year</label>
+              <input id="slider" type="range" min="2008" max="2014" value="2008" step="1" list="mark" />
+              <datalist id="mark">
+                <option>2008</option>
+                <option>2009</option>
+                <option>2010</option>
+                <option>2011</option>
+                <option>2012</option>
+                <option>2013</option>
+                <option>2014</option>
+              </datalist>
+              <output for=slider id=currentYear>2008</output>
           </div>
-
         </div>
 
     </div>
