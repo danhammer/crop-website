@@ -10,7 +10,7 @@ html, body, #map {
     margin: 0;
 }
 #slider{
-    width: 700px;
+    width: 640px;
     margin-top:2px;
 }
 
@@ -34,8 +34,8 @@ html, body, #map {
 #controls {
     position: absolute;
     bottom: 10px;
-    width: 800px;
-    left: calc((100% - 800px) / 2);
+    width: 750px;
+    left: calc((100% - 750px) / 2);
     z-index: 2;
     background-color: #fff;
     padding: 10px;
