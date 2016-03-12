@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Water Detection</title>
+    <title>crops</title>
     <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
     <meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
     <link rel="shortcut icon" href="http://cartodb.com/assets/favicon.ico" />
@@ -11,10 +11,6 @@
   </head>
   <body>
     <div class="header">
-       <h1>Water Detection from NASA Landsat data</h1>
-        <br>
-        <h2>Draw a bounding box to start</h2> 
-
     </div>
 
     <div id="map">
@@ -23,27 +19,9 @@
             <div id="series"></div>
           </div>
 
-          <div id="yearcontrol">
-             <label for=slider>Year</label>
-              <input id="slider" type="range" min="1999" max="2012" value="1999" step="1" list="mark" />
-              <datalist id="mark">
-                <option>1999</option>
-                <option>2000</option>
-                <option>2001</option>
-                <option>2002</option>
-                <option>2003</option>
-                <option>2004</option>
-                <option>2005</option>
-                <option>2006</option>
-                <option>2007</option>
-                <option>2008</option>
-                <option>2009</option>
-                <option>2010</option>
-                <option>2011</option>
-                <option>2012</option>
-              </datalist>
-              <output for=slider id=currentYear>1999</output>
+          <div id='taggers'>
           </div>
+
         </div>
 
     </div>

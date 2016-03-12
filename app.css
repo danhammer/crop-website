@@ -64,5 +64,5 @@ html, body, #map {
 }
 
 h1 { font-family: Helvetica, Arial, sans-serif; font-size: 40px; line-height: 40px; margin: 0; color: #48483A;}
-h2 { font-family: Helvetica, Arial, sans-serif; font-size: 18px; font-weight: 300; line-height:26px; width: 600px; margin-top: -5px; color: #74776B;  }
+h2 { font-family: Helvetica, Arial, sans-serif; font-size: 30px; font-weight: 500; line-height:26px; width: 600px; margin-top: -5px; color: #74776B;  }
 label, output, input{font-family: Helvetica, Arial, sans-serif; font-size: 12px; font-weight: bold; line-height:13px; width: 600px; margin-top: -5px; color: #74776B;  }
