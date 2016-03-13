@@ -49,7 +49,7 @@ function main() {
           corners: 0.3, // Corner roundness (0..1)
           rotate: 0, // The rotation offset
           direction: -1, // 1: clockwise, -1: counterclockwise
-          color: '#74776B', // #rgb or #rrggbb or array of colors
+          color: '#F5FFFA', // #rgb or #rrggbb or array of colors
           speed: 1, // Rounds per second
           trail: 60, // Afterglow percentage
           shadow: false, // Whether to render a shadow
@@ -99,7 +99,7 @@ function main() {
 
     var waterStyle = {
         "color": "#00F",
-        "weight": 1,
+        "weight": 2,
         "opacity": 0.65
     };
 
@@ -123,7 +123,7 @@ function main() {
                 shapeOptions: {
                     color: '#a63b55',
                     fill:false,
-                    weight:2
+                    weight:4
                 },
                 showArea: true
             },
