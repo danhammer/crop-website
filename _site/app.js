@@ -91,7 +91,7 @@ function main() {
     });
 
     // Add CartoDB basemaps
-    L.tileLayer('http://api.mapbox.com/v4/mapbox.light/{z}/{x}/{y}.png?access_token=pk.eyJ1IjoiZGFuaGFtbWVyIiwiYSI6IkpyY19CNFkifQ.2Y7Un3COo3E_81ROBLKkSg', {
+    L.tileLayer('http://api.mapbox.com/v4/mapbox.streets-satellite/{z}/{x}/{y}.png?access_token=pk.eyJ1IjoiZGFuaGFtbWVyIiwiYSI6IkpyY19CNFkifQ.2Y7Un3COo3E_81ROBLKkSg', {
         attribution: '<a href="http://danham.me/r">Hammer</a> © 2015',
         maxZoom: 18,
         minZoom: 9
